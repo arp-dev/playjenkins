@@ -19,7 +19,7 @@ pipeline {
             sh '''
             /kaniko/executor --dockerfile `pwd`/Dockerfile \
                              --context `pwd` \
-                             --destination=arp-dev/apa2:${BUILD_NUMBER}
+                             --destination=arp01docker/arprepo:${BUILD_NUMBER}
             '''
           }
         }
